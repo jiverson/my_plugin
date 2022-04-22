@@ -1,0 +1,49 @@
+name: my_plugin
+description: A Very Good Project created by Very Good CLI.
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+  flutter: ">=2.0.0"
+
+flutter:
+  plugin:
+    platforms: 
+      android:
+        default_package: my_plugin_android 
+      ios:
+        default_package: my_plugin_ios 
+      linux:
+        default_package: my_plugin_linux 
+      macos:
+        default_package: my_plugin_macos 
+      web:
+        default_package: my_plugin_web 
+      windows:
+        default_package: my_plugin_windows 
+
+dependencies:
+  flutter:
+    sdk: flutter
+  my_plugin_android:
+    path: ../my_plugin_android 
+  my_plugin_ios:
+    path: ../my_plugin_ios 
+  my_plugin_linux:
+    path: ../my_plugin_linux 
+  my_plugin_macos:
+    path: ../my_plugin_macos 
+  my_plugin_web:
+    path: ../my_plugin_web 
+  my_plugin_windows:
+    path: ../my_plugin_windows 
+  my_plugin_platform_interface:
+    path: ../my_plugin_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.1.4
+  plugin_platform_interface: ^2.0.1
+  very_good_analysis: ^2.4.0
