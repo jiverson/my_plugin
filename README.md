@@ -1,1 +1,1 @@
-# flutter_plugin
+# Plugin demo using federated plugins
